@@ -14,4 +14,8 @@ export class HomeComponent {
     this.authService.logout();
     this.router.navigateByUrl('/login');
   }
+
+  get isLogged() {
+    return this.authService.isLogged();
+  }
 }
