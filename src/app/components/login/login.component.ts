@@ -1,4 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/core/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -9,10 +11,10 @@ export class LoginComponent {
   username: string = '';
   password: string = '';
 
+  constructor(private authService: AuthService, private router: Router) {}
+
   onLogin() {
-    console.log('Login');
+    this.authService.login(this.username, this.password);
+    this.router.navigateByUrl('/');
   }
-}
-function Ouput() {
-  throw new Error('Function not implemented.');
 }
