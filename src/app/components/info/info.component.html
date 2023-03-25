@@ -1,0 +1,38 @@
+<div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full">
+  <h2 class="text-gray-700 font-semibold text-2xl mb-4">Guards en Angular</h2>
+  <p class="mb-4">
+    Los Guards en Angular son una forma de controlar y proteger el acceso a
+    rutas específicas en tu aplicación. Al utilizar Guards, puedes asegurarte de
+    que ciertas condiciones se cumplan antes de permitir que el usuario acceda a
+    una ruta o, en algunos casos, antes de abandonar una ruta.
+  </p>
+
+  <h3 class="text-gray-700 font-semibold text-xl mb-3">Tipos de Guards</h3>
+  <ul class="list-disc ml-6">
+    <li class="mb-2">
+      <strong>CanActivate:</strong> Decide si una ruta puede ser activada.
+      Generalmente se utiliza para proteger rutas que requieren autenticación o
+      autorización.
+    </li>
+    <li class="mb-2">
+      <strong>CanActivateChild:</strong> Decide si una ruta hija puede ser
+      activada. Similar al CanActivate, pero se aplica a las rutas hijas de una
+      ruta en particular.
+    </li>
+    <li class="mb-2">
+      <strong>CanDeactivate:</strong> Decide si se puede abandonar una ruta.
+      Útil cuando se necesita evitar que el usuario salga de una ruta, como en
+      un formulario con datos no guardados.
+    </li>
+    <li class="mb-2">
+      <strong>Resolve:</strong> Realiza una acción de resolución de datos antes
+      de activar una ruta. Por ejemplo, puedes obtener datos para una vista
+      antes de que se muestre al usuario.
+    </li>
+    <li>
+      <strong>CanLoad:</strong> Decide si un módulo de carga diferida
+      (lazy-loaded) puede ser cargado. Útil para evitar la carga de módulos que
+      no son accesibles para un usuario específico.
+    </li>
+  </ul>
+</div>

@@ -1,11 +1,18 @@
-.form {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
+.login-form {
+  font-family: "Roboto", sans-serif, Helvetica, sans-serif;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 24px;
 
-  &-group {
-    position: relative;
-    margin-bottom: 1rem;
+  mat-card-title {
+    margin-bottom: 24px;
+  }
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
   }
 }
