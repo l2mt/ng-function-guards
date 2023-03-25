@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class HomeComponent {
   constructor(private authService: AuthService, private router: Router) {}
 
-  onLogoutClick() {
+  onLogout() {
     this.authService.logout();
     this.router.navigateByUrl('/login');
   }
